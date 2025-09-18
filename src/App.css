@@ -1,0 +1,123 @@
+/* Estilo WhatsApp verde */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e5ddd5;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  height: 90vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+  background: #075e54;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-header h3 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #ece5dd;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  margin: 5px 0;
+}
+
+.message.sent {
+  justify-content: flex-end;
+}
+
+.message.received {
+  justify-content: flex-start;
+}
+
+.msg-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.msg-content {
+  background: #dcf8c6;
+  padding: 6px 10px;
+  border-radius: 8px;
+  max-width: 70%;
+  position: relative;
+}
+
+.message.received .msg-content {
+  background: #fff;
+}
+
+.msg-time {
+  display: block;
+  font-size: 10px;
+  color: gray;
+  text-align: right;
+  margin-top: 2px;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.input-container button {
+  background: #075e54;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
